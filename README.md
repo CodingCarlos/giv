@@ -1,2 +1,2 @@
 # giv
-Website for GIV
+Website for America GIVs

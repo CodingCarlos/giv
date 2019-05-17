@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GIV</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  
+    <!-- Fonts -->
+<!--   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Rufina" rel="stylesheet"> -->
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+  <div class="wrapper parallax">
+
+    <div class="bg-figure bg-figure1"></div>
+    <div class="bg-figure bg-figure2"></div>
+    <div class="bg-figure bg-figure3"></div>
+
+    <h1 class="logo">
+      <img src="img/logo.png">
+    </h1>
+
+    <img src="img/card.png" class="card" data-tilt data-tilt-max="5">
+
+    <a href="#" class="givs-button" id="js-dropdown-activator">
+      America <span class="text-accent">GIV</span>s
+      <i class="drop-down"></i>
+    </a>
+
+    <div class="dropdown-modal hidden" id="js-dropdown-modal">
+      <p>Most of us care. About every aspect of our lives. From the food we eat, to the products we purchase.</p>
+      <p>We identify with doing good, and we expect companies to do good too.</p>
+      <p>But we should –and could– be doing more. Especially those who can afford to. <span class="text-accent">Together with our partners</span>, we’re transforming how you GIV</p>
+      <p>Coming January 2020.</p>
+    </div>
+
+    <div class="copy">&copy; GIV 2019</div>
+
+    <div class="place">New York, NY 10001</div>
+
+    <div class="contact"></div>
+  </div>
+
+  <!-- <script src="js/vendor/modernizr-3.6.0.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
+  <!-- <script src="js/plugins.js"></script> -->
+  <!-- <script src="js/smooth-scroll.js"></script> -->
+  <script type="text/javascript">
+  (function () {
+
+    if ( typeof window.CustomEvent === "function" ) return false;
+
+    function CustomEvent ( event, params ) {
+      params = params || { bubbles: false, cancelable: false, detail: null };
+      var evt = document.createEvent( 'CustomEvent' );
+      evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+      return evt;
+     }
+
+    CustomEvent.prototype = window.Event.prototype;
+
+    window.CustomEvent = CustomEvent;
+  })();
+  </script>
+  <script src="js/vanilla-tilt-babel.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
