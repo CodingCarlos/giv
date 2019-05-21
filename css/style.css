@@ -75,7 +75,7 @@ h1.logo {
 }
 
 .card {
-	box-shadow: -9px 36px 54px rgba(0, 0, 0, 0.6), -2px 3px 6px rgba(0, 0, 0, 0.8), -15px 78px 75px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.2);
 	border-radius: 21px;
 	max-height: 360px;
 	max-width: 570px;
