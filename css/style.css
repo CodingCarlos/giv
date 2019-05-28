@@ -6,14 +6,14 @@
 html,
 body {
 	background-color: #E0EDF6;
-	color: #5f5f5f;
-	font-size: 18px;
-	font-family: Arial;
-	height: 100vh;
-	width: 100vw;
+	color: #000000;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Arial;
+	height: 100%;
+	width: 100%;
 	overflow: hidden;
 	margin: 0;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .wrapper {
@@ -32,6 +32,9 @@ body {
 .givs-button {
 	z-index: 1;
 }
+    .givs-button img {
+        height: 16px;
+    }
 
 h1.logo {
 	color: #000;
@@ -68,10 +71,10 @@ h1.logo {
 	background-image: url('../img/mail.svg');
 	background-repeat: no-repeat;
 	position: absolute;
-	right: 83px;
-	bottom: 33px;
-	width: 32px;
-	height: 32px;
+    right: 56px;
+    bottom: 19px;
+    width: 32px;
+    height: 32px;
 }
 
 .card {
@@ -128,19 +131,22 @@ h1.logo {
 }
 
 .text-accent {
-	color: #f2705c;
+	/* color: #f2705c; */
+	color: red;
 }
 
+/* chevron icon */
 .drop-down {
 	background-image: url('../img/icon/keyboard_arrow_down_24px.png');
 	background-size: contain;
-	background-position: center center;
+	/* background-position: center center; */
 	background-repeat: no-repeat;
-	height: 12px;
+	height: 8px;
 	display: inline-block;
 	vertical-align: middle;
 	width: 12px;
 	margin-left: 8px;
+    margin-top: -13px;
 }
 .flipped .drop-down {
 	transform: rotate(180deg);
@@ -149,7 +155,6 @@ h1.logo {
 .dropdown-modal {
 	position: absolute;
 	background: #E0EDF6;
-	border: 1px solid #606060;
 	box-sizing: border-box;
 	border-radius: 4px;
 	padding: 12px 24px;
@@ -162,55 +167,14 @@ h1.logo {
 
 /* --- */
 
-.bg-figure {
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	z-index: 0;
-}
-
-.bg-figure1 {
-	background-image: url('../img/vector1.svg');
-	background-position: left center;
-	left: 0;
-	width: 100vw;
-	height: 80vh;
-}
-
-.bg-figure2 {
-	background-image: url('../img/vector2.svg');
-	background-position: bottom;
-	bottom: 0;
-	right: -27vw;
-	width: 100vw;
-	height: 15vh;
-}
-
-.bg-figure3 {
-	background-image: url('../img/vector3.svg');
-	background-position: right center;
-	top: -50px;
-	right: 10vw;
-	width: 100vw;
-	height: 56vh;
-}
-
 .hidden {
 	opacity: 0;
 	display: none;
 }
 
-@media screen and (max-width: 950px) {
-	.bg-figure3 {
-		right: 0;
-	}
-}
-
-@media screen and (max-width: 850px) {
-	.bg-figure2,
-	.bg-figure3 {
-		display: none;
-	}
+.dropdown-modal {
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 @media screen and (max-width: 600px) {
@@ -229,10 +193,17 @@ h1.logo {
 	}
 
 	.dropdown-modal {
-		right: 5vw;
-		top: 92px;
-		width: 90vw;
-	}
+        right: 0px;
+        top: 92px;
+        width: 100%;
+        height: 100%;
+        font-size: 1.4rem;
+    }
+    
+    .givs-button {
+        top: 52px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
