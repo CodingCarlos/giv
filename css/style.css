@@ -85,6 +85,9 @@ h1.logo {
 	transform: translateZ(-100px);
 	width: 70vw;
 }
+	.card > *{
+		border-radius: 21px;
+	}
 
 .text-accent {
 	/* color: #f2705c; */
