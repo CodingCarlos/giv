@@ -22,3 +22,13 @@ function removeClass(el, className) {
 		el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
 	}
 }
+
+// Shine
+var shine = new Shine(document.getElementById('card'), undefined, undefined, 'boxShadow');
+
+window.addEventListener('mousemove', function(event) {
+	console.log(shine);
+  shine.light.position.x = event.clientX;
+  shine.light.position.y = event.clientY;
+  shine.draw();
+}, false);
