@@ -138,7 +138,7 @@ h1.logo {
     line-height: 1.4;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 	.copy {
 		left: auto;
 		bottom: 64px;
@@ -164,7 +164,21 @@ h1.logo {
     .givs-button {
         top: 52px;
     }
+}
 
+/*@media screen and (max-width: 890px) and (orientation:landscape) {*/
+@media screen and (max-width: 890px) and (max-height: 500px) {
+	.card {
+		max-height: 60vh;
+		width: auto;
+	}
+}
+@media screen and (max-width: 890px) and (max-height: 500px) {
+/*@media screen and (max-width: 600px) and (orientation:landscape) {*/
+	.card {
+		max-height: 50vh;
+		width: auto;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -177,5 +191,37 @@ h1.logo {
 
 	.givs-button {
 		right: 24px;
+	}
+
+	.card {
+		max-height: 30vh;
+		width: auto;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	.card {
+		max-height: 60vh;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 400px) and (max-height: 500px) {
+	.card {
+		max-height: 30vh;
+		width: auto;
+		margin-top: -5vh;
+	}
+
+	.contact {
+		bottom: 86px;
+	}
+
+	.copy {
+		bottom: 56px;
+	}
+
+	.place {
+		bottom: 23px;
 	}
 }
