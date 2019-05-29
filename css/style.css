@@ -77,7 +77,8 @@ h1.logo {
     height: 32px;
 }
 
-.card {
+.card,
+.card-ios {
 	border-radius: 21px;
 	max-height: 360px;
 	max-width: 570px;
@@ -89,7 +90,7 @@ h1.logo {
 	}
 	.card img {
 		box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.2);
-	}	
+	}
 
 .text-accent {
 	/* color: #f2705c; */
@@ -100,7 +101,6 @@ h1.logo {
 .drop-down {
 	background-image: url('../img/icon/keyboard_arrow_down_24px.png');
 	background-size: contain;
-	/* background-position: center center; */
 	background-repeat: no-repeat;
 	height: 8px;
 	display: inline-block;
@@ -138,6 +138,49 @@ h1.logo {
     line-height: 1.4;
 }
 
+/* --- */
+
+.card-ios {
+	animation: rotateCard;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotateCard {
+  0% {
+  	-webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	-moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	-o-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	-ms-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  10% {
+  	-webkit-transform: perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+	-moz-transform: perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+	-o-transform: perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+	-ms-transform: perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+	transform: perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+
+	/*-webkit-transform: perspective(500px) rotateX(24deg) rotateY(40deg) rotateZ(8deg);
+	-moz-transform: perspective(500px) rotateX(24deg) rotateY(40deg) rotateZ(8deg);
+	-o-transform: perspective(500px) rotateX(24deg) rotateY(40deg) rotateZ(8deg);
+	-ms-transform: perspective(500px) rotateX(24deg) rotateY(40deg) rotateZ(8deg);
+	transform: perspective(500px) rotateX(24deg) rotateY(40deg) rotateZ(8deg);*/
+  }
+
+  20% {
+  	-webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	-moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	-o-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	-ms-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+/* --- */
+
 @media screen and (max-width: 400px) {
 	.copy {
 		left: auto;
@@ -149,6 +192,7 @@ h1.logo {
 		bottom: 116px;
 	}
 
+	.card-ios,
 	.card {
 		width: 85vw;
 	}
@@ -168,13 +212,14 @@ h1.logo {
 
 /*@media screen and (max-width: 890px) and (orientation:landscape) {*/
 @media screen and (max-width: 890px) and (max-height: 500px) {
+	.card-ios,
 	.card {
 		max-height: 60vh;
 		width: auto;
 	}
 }
 @media screen and (max-width: 890px) and (max-height: 500px) {
-/*@media screen and (max-width: 600px) and (orientation:landscape) {*/
+	.card-ios,
 	.card {
 		max-height: 50vh;
 		width: auto;
@@ -193,6 +238,7 @@ h1.logo {
 		right: 24px;
 	}
 
+	.card-ios,
 	.card {
 		max-height: 30vh;
 		width: auto;
@@ -200,6 +246,7 @@ h1.logo {
 }
 
 @media screen and (max-height: 500px) {
+	.card-ios,
 	.card {
 		max-height: 60vh;
 		width: auto;
@@ -207,6 +254,7 @@ h1.logo {
 }
 
 @media screen and (max-width: 400px) and (max-height: 500px) {
+	.card-ios,
 	.card {
 		max-height: 30vh;
 		width: auto;
