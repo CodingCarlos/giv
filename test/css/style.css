@@ -145,9 +145,9 @@ h1.logo {
 	overflow: hidden;
 }
 	.card-ios:after {
-	  animation: shine 5s ease-in-out 1;
+	  animation: shine 1s ease-in-out 1;
 	  animation-fill-mode: forwards;  
-	  animation-delay: 4s;
+	  animation-delay: 1s;
 	  content: "";
 	  position: absolute;
 	  top: -110%;
@@ -175,6 +175,9 @@ h1.logo {
     transition-property: left, top, opacity;
     transition-duration: 0.7s, 0.7s, 0.15s;
     transition-timing-function: ease;
+  }
+  80% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
