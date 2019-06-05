@@ -160,9 +160,9 @@ h1.logo {
 	  background: rgba(255, 255, 255, 0.13);
 	  background: linear-gradient(
 	    to right, 
-	    rgba(255, 255, 255, 0.13) 0%,
-	    rgba(255, 255, 255, 0.13) 77%,
-	    rgba(255, 255, 255, 0.5) 92%,
+	    rgba(255, 255, 255, 0.24) 0%,
+	    rgba(255, 255, 255, 0.24) 77%,
+	    rgba(255, 255, 255, 1) 92%,
 	    rgba(255, 255, 255, 0.0) 100%
 	  );
 	  z-index: 1;
@@ -175,9 +175,6 @@ h1.logo {
     transition-property: left, top, opacity;
     transition-duration: 0.7s, 0.7s, 0.15s;
     transition-timing-function: ease;
-  }
-  80% {
-    opacity: 0;
   }
   100% {
     opacity: 0;
