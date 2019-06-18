@@ -13,8 +13,22 @@ var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
 
 if (iOSSafari) {
 	card.className += ' hidden';
+	startIOSAnimation();
 } else {
 	iosCard.className += ' hidden';
+}
+
+var hidden = false;
+function startIOSAnimation() {
+	setInterval(function () {
+		if (hidden) {
+			removeClass(iosCard.children[1], 'transparent');
+		} else {
+			iosCard.children[1].className += ' transparent';
+		}
+
+		hidden = !hidden;
+	}, 3000)
 }
 
 function switchDropdown() {
