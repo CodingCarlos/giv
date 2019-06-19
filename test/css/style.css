@@ -134,6 +134,10 @@ h1.logo {
 	display: none;
 }
 
+.transparent {
+	opacity: 0;
+}
+
 .dropdown-modal {
     font-weight: 400;
     line-height: 1.4;
@@ -145,7 +149,11 @@ h1.logo {
 	position: relative;
 	overflow: hidden;
 }
-	.card-ios:after {
+
+.card-absolute {
+	position: absolute;
+}
+/*	.card-ios:after {
 	  animation: shine 3s ease-in-out 1;
 	  animation-fill-mode: forwards;  
 	  animation-delay: 0s;
@@ -183,7 +191,7 @@ h1.logo {
     left: -30%;
     transition-property: left, top, opacity;
   }
-}
+}*/
 
 /* --- */
 
