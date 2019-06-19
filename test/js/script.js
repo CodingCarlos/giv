@@ -22,9 +22,9 @@ var hidden = false;
 function startIOSAnimation() {
 	setInterval(function () {
 		if (hidden) {
-			removeClass(iosCard.children[1], 'transparent');
+			removeClass(iosCard.children[0], 'transparent');
 		} else {
-			iosCard.children[1].className += ' transparent';
+			iosCard.children[0].className += ' transparent';
 		}
 
 		hidden = !hidden;
