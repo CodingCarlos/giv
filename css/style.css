@@ -65,6 +65,7 @@ h1.logo {
 .place {
 	position: absolute;
 	bottom: 33px;
+    right: 56px;
 }
 
 .contact {
@@ -123,7 +124,7 @@ h1.logo {
 	z-index: 2;
 	font-weight: normal;
 	right: 32px;
-	top: 72px;
+	top: 88px;
 }
 
 /* --- */
@@ -143,6 +144,10 @@ h1.logo {
 		left: auto;
 		bottom: 64px;
 	}
+    
+    .place {
+        right: auto;
+    }
 
 	.contact {
 		right: auto;
@@ -162,7 +167,8 @@ h1.logo {
     }
     
     .givs-button {
-        top: 52px;
+        /* top: 52px; */
+        top: 29px;
     }
 }
 
