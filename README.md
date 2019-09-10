@@ -1,4 +1,4 @@
-# giv
+# GIV.
 Website for GIV.
 
 ### Card Tilt Plugin
