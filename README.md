@@ -1,5 +1,5 @@
-# giv
-Website for America GIVs
+# GIV.
+Website for GIV.
 
 ### Card Tilt Plugin
  - [Repository](https://github.com/micku7zu/vanilla-tilt.js)
